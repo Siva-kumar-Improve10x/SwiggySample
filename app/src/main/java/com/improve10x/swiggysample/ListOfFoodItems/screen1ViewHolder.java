@@ -1,4 +1,4 @@
-package com.improve10x.swiggysample;
+package com.improve10x.swiggysample.ListOfFoodItems;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -7,7 +7,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class swiggyViewHolder extends RecyclerView.ViewHolder {
+import com.improve10x.swiggysample.R;
+
+public class screen1ViewHolder extends RecyclerView.ViewHolder {
     public ImageView foodImageIv;
     public TextView foodNameTxt;
     public TextView subNameTxt;
@@ -15,7 +17,7 @@ public class swiggyViewHolder extends RecyclerView.ViewHolder {
     public TextView ratingTxt;
     public TextView deliveryTimeTxt;
 
-    public swiggyViewHolder(@NonNull View itemView) {
+    public screen1ViewHolder(@NonNull View itemView) {
         super(itemView);
         foodImageIv = itemView.findViewById(R.id.foodimage_iv);
         foodNameTxt = itemView.findViewById(R.id.foodname_txt);
