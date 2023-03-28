@@ -17,25 +17,24 @@
         <activity
             android:name=".Screen2.SwiggyScreen2Activity"
             android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Screen6.Screen6Activity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SwiggyNewScreen"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ListOfFoodItems.Screen1"
+            android:name=".Screen1.Screen1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

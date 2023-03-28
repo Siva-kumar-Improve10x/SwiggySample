@@ -1,4 +1,4 @@
-package com.improve10x.swiggysample.ListOfFoodItems;
+package com.improve10x.swiggysample.Screen1;
 
 import android.view.View;
 import android.widget.ImageView;

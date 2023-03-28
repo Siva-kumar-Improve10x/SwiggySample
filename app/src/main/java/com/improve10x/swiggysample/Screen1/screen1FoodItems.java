@@ -1,4 +1,4 @@
-package com.improve10x.swiggysample.ListOfFoodItems;
+package com.improve10x.swiggysample.Screen1;
 
 public class screen1FoodItems {
     public String foodImageUrl;

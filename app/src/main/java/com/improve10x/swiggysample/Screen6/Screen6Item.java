@@ -1,4 +1,4 @@
-package com.improve10x.swiggysample;
+package com.improve10x.swiggysample.Screen6;
 
 public class Screen6Item {
     public String imageUrl;

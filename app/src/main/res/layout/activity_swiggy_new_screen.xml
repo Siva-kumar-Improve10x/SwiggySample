@@ -40,7 +40,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/screen2_Rv"
+        android:id="@+id/screen6_Rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -177,8 +177,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_alignTop="@id/liner_ll"
                 android:layout_marginLeft="170dp"
                 android:background="@drawable/ic_baseline_circle_24"

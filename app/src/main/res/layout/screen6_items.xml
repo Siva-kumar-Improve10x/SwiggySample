@@ -2,18 +2,85 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/biriyani_Iv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:adjustViewBounds="true"
             app:srcCompat="@drawable/img_2" />
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@id/biriyani_Iv"
+            android:layout_alignBottom="@id/biriyani_Iv"
+            android:background="#C6000000"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/discount_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  -60%  "
+                android:textColor="#F3EEEE"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/itemname_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#131313"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subitemname_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/itemrating_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4.5☆"
+            android:textColor="#026706"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/itemdeliverytim_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="16sp" />
+    </LinearLayout>
+
 </LinearLayout>
