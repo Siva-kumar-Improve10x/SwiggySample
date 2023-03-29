@@ -8,9 +8,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.improve10x.swiggysample.R;
+import com.improve10x.swiggysample.Screen2ActionClick;
 
 public class Screen2Adapter extends RecyclerView.Adapter<Screen2ViewHolder> {
     public Screen2items[] items;
+    public Screen2ActionClick actionClick;
     public  Screen2Adapter(Screen2items[] screen2items){
         items = screen2items;
     }
@@ -30,10 +32,21 @@ public class Screen2Adapter extends RecyclerView.Adapter<Screen2ViewHolder> {
         holder.foodTxt.setText(screen2items.food);
         holder.subFoodTxt.setText(screen2items.subfood);
         holder.rupeeTxt.setText(screen2items.rupee);
-        holder.quntityTxt.setText(screen2items.quntity);
-
+        if (screen2items.quntity == 0) {
+            holder.minusBtn.setVisibility(View.GONE);
+            holder.quntityTxt.setVisibility(View.GONE);
+        } else {
+            holder.quntityTxt.setText(screen2items.quntity + "");
+            holder.minusBtn.setVisibility(View.VISIBLE);
+            holder.quntityTxt.setVisibility(View.VISIBLE);
+        }
+        holder.plusBtn.setOnClickListener(v -> {
+            actionClick.onAddClick(screen2items);
+        });
+        holder.minusBtn.setOnClickListener(v -> {
+            actionClick.onRemoveClick(screen2items);
+        });
     }
-
     @Override
     public int getItemCount() {
         return items.length;

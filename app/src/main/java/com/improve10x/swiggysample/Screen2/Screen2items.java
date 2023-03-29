@@ -4,6 +4,6 @@ public class Screen2items {
     public String food;
     public String rupee;
     public String subfood;
-    public String quntity;
+    public int quntity;
 
 }
