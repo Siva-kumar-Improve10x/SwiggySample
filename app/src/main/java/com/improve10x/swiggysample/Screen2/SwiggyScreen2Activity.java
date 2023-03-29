@@ -7,9 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.improve10x.swiggysample.R;
-import com.improve10x.swiggysample.Screen2.Screen2Adapter;
-import com.improve10x.swiggysample.Screen2.Screen2items;
-import com.improve10x.swiggysample.Screen2ActionClick;
 
 public class SwiggyScreen2Activity extends AppCompatActivity {
     RecyclerView screen2Rv;

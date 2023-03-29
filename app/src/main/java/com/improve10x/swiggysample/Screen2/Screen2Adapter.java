@@ -8,7 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.improve10x.swiggysample.R;
-import com.improve10x.swiggysample.Screen2ActionClick;
 
 public class Screen2Adapter extends RecyclerView.Adapter<Screen2ViewHolder> {
     public Screen2items[] items;

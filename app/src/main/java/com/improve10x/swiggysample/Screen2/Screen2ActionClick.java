@@ -1,4 +1,4 @@
-package com.improve10x.swiggysample;
+package com.improve10x.swiggysample.Screen2;
 
 import com.improve10x.swiggysample.Screen2.Screen2items;
 
