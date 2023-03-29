@@ -26,9 +26,9 @@
             app:srcCompat="@drawable/ic_baseline_currency_rupee_24" />
 
         <TextView
-            android:id="@+id/price_txr"
+            android:id="@+id/price_txt"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginRight="40dp"
             android:gravity="center"
             android:text="TextView"
@@ -50,22 +50,24 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="40dp"
+            android:layout_marginRight="30dp"
             android:background="#FACBBC"
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imageView15"
                 android:layout_width="55dp"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#FACBBC"
+                android:padding="2dp"
                 app:srcCompat="@drawable/ic_baseline_add_24" />
         </LinearLayout>
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/unavailable_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
